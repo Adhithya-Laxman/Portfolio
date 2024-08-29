@@ -668,3 +668,24 @@ footer{
     }
 
 }
+
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack the columns vertically */
+        gap: 20px;
+    }
+
+    .col {
+        width: 100%; /* Make each column take full width */
+    }
+
+    .skills-box {
+        margin-bottom: 20px; /* Add space between skill boxes */
+    }
+
+    .skills-list {
+        justify-content: center; /* Center-align the skills */
+    }
+}
