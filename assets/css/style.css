@@ -100,11 +100,26 @@ nav{
 .nav-logo{
    position: relative;
 }
-.nav-name{
-    font-size: 30px;
+.nav-name {
+    font-size: calc(1.5rem + 1vw); /* Dynamically adjusts font size based on viewport width */
     font-weight: 600;
     color: var(--text-color-third);
+    transition: font-size 0.2s ease; /* Smooth transition for resizing */
 }
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .nav-name {
+        font-size: calc(1.3rem + 0.7vw); /* Further reduces font size on medium-sized screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-name {
+        font-size: calc(1.2rem + 0.5vw); /* Reduces font size even more on small screens */
+    }
+}
+
 .nav-logo span{
     position: absolute;
     top: -15px;
