@@ -422,6 +422,7 @@ h3{
 }
 .project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
+.project-box:hover.project-box>center,
 .project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
