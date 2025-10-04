@@ -384,6 +384,27 @@ h3{
     flex-wrap: wrap;
 }
 
+/* ----- EXPERIENCE GRID (2x2) ----- */
+.experience-grid{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+.experience-grid .project-box{
+    width: 100%;
+    height: max-content;
+}
+
+/* Ensure links inside headings inherit color */
+.project-box h3 a{
+    color: inherit;
+    text-decoration: none;
+}
+.project-box h3 a:hover{
+    text-decoration: underline;
+}
+
 .project-box{
     position: relative;
     display: flex;
@@ -657,6 +678,11 @@ footer{
     }
     .project-box{
         width: 80%;
+    }
+
+    /* Stack experience grid on small screens */
+    .experience-grid{
+        grid-template-columns: 1fr;
     }
 	.project-box label{
 		padding: 15px;
